@@ -1,0 +1,91 @@
+:root {
+  --color: #e6007e;
+  --txt: rgb(185, 185, 185);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--txt);
+}
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/*  Right Column   */
+.right {
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+}
+
+#header {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+  line-height: 1.6;
+}
+
+#center {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+p {
+  padding: 10px;
+  color: black;
+}
+#center form ul {
+  list-style: none;
+}
+
+#center form ul li {
+  margin: 10px;
+}
+
+#footer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: top;
+}
+/* button for creating a account */
+#create_account {
+}
+
+/*  Left Column   */
+.left {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column-reverse;
+}
+
+#picture {
+  background-image: url(/Images/fern.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 100vh;
+}
+
+#credit {
+  margin-bottom: 5px;
+  font-style: italic;
+}
