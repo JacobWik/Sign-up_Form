@@ -10,6 +10,7 @@
   font-family: "Poppins", sans-serif;
   color: var(--txt);
 }
+
 .content {
   width: 100vw;
   height: 100vh;
@@ -38,12 +39,14 @@
 #center {
   flex-grow: 1;
   display: flex;
+  padding-top: 20px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: whitesmoke;
   border-radius: 20px;
 }
+
 .right p {
   padding: 10px;
   color: black;
@@ -129,6 +132,7 @@ button:active:before {
   background: #3a0ca3;
   transition: background 0s;
 }
+
 /*  Left Column   */
 .left {
   width: 40vw;
@@ -158,11 +162,7 @@ button:active:before {
   width: 40vw;
 }
 
-#logo img {
-  max-width: 100px;
-  max-height: 100px;
-}
-#logo h1 {
+#company_name {
   color: white;
 }
 
