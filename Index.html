@@ -12,7 +12,8 @@
     <div class="content">
         <div class="left" id="picture">
             <div id="Logo">
-
+                <img src="Images/icons8-bbb.svg" alt="companyImg">
+                <h1> Jacob Industries</h1>
             </div>
 
             <div id="credit">
@@ -35,34 +36,46 @@
 
             <container id="center">
                 <p>Let's do this!</p>
-                <form action="#" method="post">
-                    <ul>
-                    <li>
-                        <label for="name">Name:</label>
+                <form action="#" method="post" id="my-form">
+
+                    <div class="labelContainer">
+                        <label for="name">*First Name</label>
                         <input type="text" id="name" name="user_name">
-                      </li>
-                      <li>
-                        <label for="mail">E-mail:</label>
+                    </div>
+                    
+                    <div class="labelContainer">
+                        <label for="mail">*Last Name</label>
                         <input type="email" id="mail" name="user_email">
-                      </li>
-                      <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                      </li>
-                    </ul>
+                    </div>
+
+                    <div class="labelContainer">
+                        <label for="email">*Email</label>
+                        <input type="email" name="user_mail"></textarea>
+                    </div>
+
+                    <div class="labelContainer">
+                        <label for="number">Phone Number</label>
+                        <input type="number" id="number" name="user_name" required>
+                    </div>
+
+                    <div class="labelContainer">
+                        <label for="password">*Password</label>
+                        <input type="password" id="password" name="user_email" required>
+                    </div>
+
+                    <div class="labelContainer">
+                        <label for="password">*Confirm Password</label>
+                        <input type="password" name="confirm_password" required">
+                    </div>
 
                 </form>
             </container>
 
             <container id="footer">
                 <div>
-                    <button class="createAccountButton-pushable" role="button">
-                        <span class="createAccountButton-82-shadow"></span>
-                        <span class="createAccountButton-82-edge"></span>
-                        <span class="createAccountButton-82-front text">
-                          Button 82
-                        </span>
-                      </button>
+                    <button type="submit" form="my-form" class="createAccountButton-pushable" role="button">
+                          Create Account
+                    </button>
                 </div>
                 <div>
                     <p>Already have an account? <a href="#" id="LogIn">Log In</a></p>
